@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import 'typeface-roboto';
-import Fab from '@material-ui/core/Fab';
-import Typography from '@material-ui/core/Typography';
-import PlayArrowOutlinedIcon from '@material-ui/icons/PlayArrowOutlined';
-import PauseOutlinedIcon from '@material-ui/icons/PauseOutlined';
+//import Fab from '@material-ui/core/Fab';
+//import Typography from '@material-ui/core/Typography';
+//import PlayArrowOutlinedIcon from '@material-ui/icons/PlayArrowOutlined';
+//import PauseOutlinedIcon from '@material-ui/icons/PauseOutlined';
 import Menu from './Menu';
 
 class App extends Component {

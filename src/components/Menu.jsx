@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, /*Switch*/} from "react-router-dom";
 import About from './About';
 
 
@@ -20,7 +20,7 @@ class Menu extends Component {
                     </ul>
                     <hr />
                     <Route exact path='/' component={Menu} />
-                    <Route  path='./About' component={About} />
+                    <Route path='./About' component={About} />
                 </div>
             </Router>
 
