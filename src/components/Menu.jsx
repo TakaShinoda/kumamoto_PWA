@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Fab from '@material-ui/core/Fab';
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 import Home from './Home';
 import About from './About';
+import page404 from './page404';
 
 
 class Menu extends Component {
@@ -19,8 +20,11 @@ class Menu extends Component {
                  
 
                     <div style={{marginLeft: '50px'}}>
-                        <Route path='/' exact component={Home}/>
-                        <Route path='/About' exact component={About}/>
+                        <Switch>
+                            <Route path='/' exact component={Home}/>
+                            <Route path='/About' exact component={About}/>
+                            <Route exact component={page404}/>
+                        </Switch>
                     </div>
             
                     <ul style={{position: "fixed", bottom: 0, marginLeft: '130px'}}>
