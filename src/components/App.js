@@ -8,11 +8,10 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <div style={{/*height: '100vh',*/display:'flex',flexDirection:'column', justifyContent:'space-evenly', alignItems:'center'}}>
+      <div style={this.backgroundstyle}>
+        <div style={{height: '100vh',display:'flex',flexDirection:'column', justifyContent:'space-evenly', alignItems:'center'}}>
           <div style={{height: '95vh'}}><Menu /></div>
         </div>
-        
       </div>
     );
   }
