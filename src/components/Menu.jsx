@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Link, Route, /*Switch*/} from "react-router-dom";
+import Fab from '@material-ui/core/Fab';
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import About from './About';
 
 
@@ -11,24 +12,41 @@ class Menu extends Component {
 
     render() {
         return (
-            <div>
             <Router>
-                <div style={{width: '500px', textAlign: 'left'}}>
+                <div style={{width: '500px', textAlign: 'center'}}>
                     <ul style={{display: 'flex'}}>
-                        <li style={this.liStyle}><Link to='./'>top</Link></li>
-                        <li style={this.liStyle}><Link to ='./About'>About</Link></li>
+                    <li style={this.liStyle}>
+                            <Fab style={{
+                                width: 100,
+                                background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+                                border: 0,
+                                boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
+                                color: 'white',
+                            }} color='secondary' size="large" variant="extended">
+                                Home
+                            </Fab>
+                        </li>
+                        &ensp;
+                        <li style={this.liStyle}>
+                            <Fab style={{
+                                width: 100,
+                                background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+                                border: 0,
+                                boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
+                                color: 'white',
+                            }} color='secondary' size="large" variant="extended">
+                                <Link to='./About'>About</Link>
+                            </Fab>
+                        </li>
                     </ul>
                     <hr />
-                    <Route exact path='/' component={Menu} />
-                    <Route path='./About' component={About} />
+
+                    <div style={{marginLeft: '50px'}}>
+                        <Route path='/About' exact component={About}/>
+                    </div>
+
                 </div>
             </Router>
-
-            
-
-            
-            </div>
-        
         );
     }
 }
