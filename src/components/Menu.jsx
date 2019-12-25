@@ -15,7 +15,16 @@ class Menu extends Component {
         return (
             <Router>
                 <div style={{width: '500px', textAlign: 'center'}}>
-                    <ul style={{display: 'relative'}}>
+                    
+                 
+
+                    <div style={{marginLeft: '50px'}}>
+                        <Route path='/' exact component={Home}/>
+                        <Route path='/About' exact component={About}/>
+                    </div>
+            
+                    <ul style={{position: "fixed", bottom: 0, marginLeft: '130px'}}>
+                    
                     <li style={this.liStyle}>
                             <Fab style={{
                                 width: 100,
@@ -24,7 +33,7 @@ class Menu extends Component {
                                 boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
                                 color: 'white',
                             }} color='secondary' size="large" variant="extended">
-                                <Link to='./'>Home</Link>
+                                <Link to='/'>Home</Link>
                             </Fab>
                         </li>
                         &ensp;
@@ -40,12 +49,6 @@ class Menu extends Component {
                             </Fab>
                         </li>
                     </ul>
-                    <hr />
-
-                    <div style={{marginLeft: '50px'}}>
-                        <Route path='/' exact component={Home}/>
-                        <Route path='/About' exact component={About}/>
-                    </div>
 
                 </div>
             </Router>

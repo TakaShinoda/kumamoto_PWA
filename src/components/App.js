@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import 'typeface-roboto';
 import Menu from './Menu';
 
-
-
 class App extends Component {
   backgroundstyle = {
     background: 'linear-gradient(to right bottom, #ffefba, #ffffff)'
