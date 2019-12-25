@@ -8,7 +8,7 @@ class About extends Component {
         return (
             <div>
                 <h1>About</h1>
-                <h3>ホテル</h3>
+                <h3>ホテルと駐車場</h3>
                 <div>
                     <h4><a href= "https://www.toyoko-inn.com/search/detail/00126"><i class="fas fa-hotel"></i>&thinsp;東横INN熊本城通町筋</a></h4>
                     <p>駐車場あり (48台収容 先着順)</p>
@@ -25,10 +25,6 @@ class About extends Component {
                 <div>
                     <h4>その他駐車場</h4>
                     <p><a href= "https://www.google.com/maps/dir/?api=1&destination=${パークシティ24水道町}" >パークシティ24水道町</a></p>
-                </div>
-                <br />
-                <div>
-                <h3>その他</h3>
                 </div>
             </div>
         );
