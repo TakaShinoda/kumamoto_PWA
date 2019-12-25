@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fab from '@material-ui/core/Fab';
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import Home from './Home';
 import About from './About';
 
 
@@ -14,7 +15,7 @@ class Menu extends Component {
         return (
             <Router>
                 <div style={{width: '500px', textAlign: 'center'}}>
-                    <ul style={{display: 'flex'}}>
+                    <ul style={{display: 'relative'}}>
                     <li style={this.liStyle}>
                             <Fab style={{
                                 width: 100,
@@ -23,7 +24,7 @@ class Menu extends Component {
                                 boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
                                 color: 'white',
                             }} color='secondary' size="large" variant="extended">
-                                Home
+                                <Link to='./'>Home</Link>
                             </Fab>
                         </li>
                         &ensp;
@@ -42,6 +43,7 @@ class Menu extends Component {
                     <hr />
 
                     <div style={{marginLeft: '50px'}}>
+                        <Route path='/' exact component={Home}/>
                         <Route path='/About' exact component={About}/>
                     </div>
 
