@@ -5,7 +5,6 @@ import Home from './Home';
 import About from './About';
 import page404 from './page404';
 
-
 class Menu extends Component {
     render() {
         return (
@@ -19,7 +18,6 @@ class Menu extends Component {
                             <Route exact component={page404}/>
                         </Switch>
                     </div>
-                   
                     <div style={{bottom: 0, textAlign: 'center', position: "absolute"}}>
                         <ul>
                             <li style={{display: 'inline'}}>
@@ -51,9 +49,6 @@ class Menu extends Component {
                             </li>
                         </ul>
                     </div>
-          
-                    
-
                 </div>
             </Router>
             </div>
